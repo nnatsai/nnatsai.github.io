@@ -1,0 +1,115 @@
+body {
+	font-family: 'Arial', sans-serif;
+	background-color: #fff;
+}
+img {
+	max-width: 100%;
+}
+
+#wrapper {
+	max-width: 100%;
+	background-color: #fff;
+	border-top: 25px solid #f5e3dc;
+	border-bottom: 25px solid #f5e3dc;
+}
+
+header {
+	background-color: #c8e4ef;
+/*	height: 250px; */
+	
+
+}
+header:after, #container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.title h1 {
+	text-transform: capitalize;
+	text-align: center;
+	color: #444444;
+	line-height: 50px;
+	padding: 0 10px;
+}
+.title .description {
+	color: #fff;
+	padding: 0 10px;
+}
+
+
+
+
+
+#container {
+	padding: 70px 55px;
+	display: flex;
+	flex-wrap: wrap;
+	background-color: #dceef5;
+	position: relative;
+
+}
+
+.speaker-image img {
+  
+  max-width: 200px;
+
+}
+
+.assignment {
+	margin-bottom: 15px;
+}
+
+
+@media screen and (min-width: 768px) {
+  .logo {
+  	width: 30%;
+  	float: left;
+  	max-height: 259px;
+  	text-align: left;
+
+  }
+
+
+  .logo img {
+  	max-width: 100%;
+  	
+  }
+
+  .title {
+	width: 70%;
+  	float: left;
+}
+.title h1 {
+  	text-align: left;
+  	padding: 0 20px;
+}
+.title .description {
+	text-align: left;
+  	padding: 0 20px;
+}
+
+#container {
+	padding: 200px 60px 100px 60px;
+}
+.assignment {
+	width: 43%;
+	float: center;
+	margin-right: 7%
+}
+.assignment-image{
+
+	width: 45%;
+	margin-right: 5%;
+	float: left;
+}
+.description {
+	width: 50%;
+	float: left;
+}
+
+
+  
+}
+
+}

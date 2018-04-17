@@ -1,0 +1,107 @@
+body, html{
+  height:100%;
+  margin:0;
+  font-size:16px;
+  font-family:"Palantino", sans-serif;
+  font-weight:400;
+  line-height:1.8em;
+  color:#666;
+}
+/*adding images*/
+.pimg1, .pimg2, .pimg3{
+  position:relative;
+  opacity:0.70;
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+
+  /*
+    fixed = parallax
+    scroll = normal
+  */
+  background-attachment:fixed;
+}
+
+.float-img {
+  float: right;
+  margin: 10px;
+  
+  
+  padding-left: 100px;
+}
+
+.pimg1{
+  background-image:url(backgroundimage1.jpeg);
+  /*background-image:url ('.../personal site/img/image1.jpeg');*/
+  /*https://static.pexels.com/photos/325185/pexels-photo-325185.jpeg*/
+  min-height:100%;
+}
+
+.pimg2{
+  background-image:url(test.jpeg);
+  min-height:150px;
+}
+
+
+.pimg3{
+  background-image:url(test.jpeg);
+  min-height:100px;
+}
+
+
+/*//section class added here*/
+.section{
+  text-align:left;
+  padding:50px 80px;
+}
+
+.section-light{
+  background-color:#F5FAFA ;
+  color:#666;
+}
+
+.section-dark{
+  background-color:#f8f8ff;
+  color:#666;
+  text-align: center;
+}
+/*adding text to make it do stuff*/
+.ptext{
+  position:absolute;
+  /*changes the position of text*/
+  top:50%;
+  width:100%;
+  text-align:center;
+  color:#000;
+  font-size:27px;
+  letter-spacing:8px;
+ /* text-transform:uppercase;*/
+}
+
+.dtext{
+  position:absolute;
+  /*changes the position of text*/
+  top:10%;
+  width:100%;
+  text-align:center;
+  color:#fff;
+  font-size:27px;
+  letter-spacing:8px;
+ /* text-transform:uppercase;*/
+}
+/*creates border of the text*/
+.ptext .border{
+  background-color:#111;
+  color:#fff;
+  padding:20px;
+}
+/*class makes blackground clear*/
+.ptext .border.trans{
+  background-color:transparent;
+}
+/*disables the scrolling images for anything small phone*/
+@media(max-width:568px){
+  .pimg1, .pimg2, .pimg3, .pimg4{
+    background-attachment:scroll;
+  }
+}
